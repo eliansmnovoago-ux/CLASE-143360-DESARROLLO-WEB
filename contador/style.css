@@ -1,0 +1,98 @@
+* { 
+    box-sizing: border-box; 
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 20px;
+    background: radial-gradient(circle at top, #380714, #120306 70%);
+    color: #fce7f3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.tarjeta {
+    width: min(100%, 420px);
+    text-align: center;
+    background: #190509;
+    border: 1px solid #4c0519;
+    border-radius: 20px;
+    padding: 40px 30px;
+    box-shadow: 0 25px 50px -12px rgba(225, 29, 72, 0.2);
+}
+
+.etiqueta {
+    color: #fb7185;
+    font-size: 10px;
+    letter-spacing: 3px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h1 {
+    color: #fff1f2;
+    letter-spacing: 2px;
+    font-size: clamp(22px, 5vw, 30px);
+    margin: 10px 0 20px;
+}
+
+.pantalla {
+    background: #0f0205;
+    border: 1px solid #881337;
+    border-radius: 14px;
+    padding: 20px;
+    font-size: 75px;
+    font-weight: bold;
+    color: #f43f5e;
+    text-shadow: 0 0 20px rgba(244, 63, 94, 0.5);
+    margin-bottom: 24px;
+}
+
+.botones {
+    display: flex;
+    gap: 14px;
+}
+
+button {
+    flex: 1;
+    border: 0;
+    border-radius: 10px;
+    padding: 14px;
+    background: #e11d48;
+    color: #fff1f2;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.15s ease, filter 0.15s ease, background-color 0.15s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    filter: brightness(1.15);
+}
+
+button.secundario {
+    background: #4c0519;
+    color: #fce7f3;
+    border: 1px solid #881337;
+}
+
+button.secundario:hover {
+    background: #881337;
+}
+
+button.reiniciar {
+    margin-top: 16px;
+    background: transparent;
+    color: #fda4af;
+    border: 1px dashed #881337;
+    width: 100%;
+}
+
+button.reiniciar:hover {
+    background: rgba(225, 29, 72, 0.08);
+    color: #e11d48;
+    border-color: #e11d48;
+}
